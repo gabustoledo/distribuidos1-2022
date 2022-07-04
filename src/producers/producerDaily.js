@@ -26,5 +26,6 @@ producerDaily.on("ready", function () {
           console.log(error);
         });
     }
+    console.log('enviados diario')
   }, 10000); //10 segundos
 });

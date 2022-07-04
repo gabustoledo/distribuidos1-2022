@@ -26,5 +26,6 @@ producerHourly.on("ready", function () {
           console.log(error);
         });
     }
+    console.log('enviados hora')
   }, 10000); //10 segundos
 });
