@@ -1,14 +1,23 @@
 const kafka = require("kafka-node");
 
-const client = new kafka.KafkaClient({kafkaHost: '127.0.0.1:9092'})
+const client = new kafka.KafkaClient({kafkaHost: 'localhost:9092'})
  
 var topicsToCreate = [{
-  topic: 'daily',
+  topic: 'daily1',
+  partitions: 1,
+  replicationFactor: 1
+},{
+  topic: 'daily2',
   partitions: 1,
   replicationFactor: 1
 },
 {
-  topic: 'hourly',
+  topic: 'hourly1',
+  partitions: 1,
+  replicationFactor: 1,
+},
+{
+  topic: 'hourly2',
   partitions: 1,
   replicationFactor: 1,
 }];

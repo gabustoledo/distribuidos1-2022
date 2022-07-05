@@ -8,5 +8,7 @@ app.listen(app.get("port"), () => {
 require("./topics");
 require("./producers/producerDaily");
 require("./producers/producerHourly");
-require("./consumers/consumerDaily");
-require("./consumers/consumerHouly");
+require("./consumers/consumerDaily1");
+require("./consumers/consumerHouly1");
+require("./consumers/consumerDaily2");
+require("./consumers/consumerHouly2");
