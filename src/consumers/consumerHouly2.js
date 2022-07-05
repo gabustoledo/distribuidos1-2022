@@ -11,8 +11,8 @@ consumerHourly2.on("message", async function (message) {
   const name = data.city.name;
   const dataHourly = data.list;
 
-  for (var i = 0; i < 24; i++) {
-    var hour = dataHourly[i];
+  // for (var i = 0; i < 24; i++) {
+    var hour = dataHourly[23];
     var hourjson = {};
     hourjson.commune = name;
     hourjson.hour = new Date(hour.dt * 1000);
@@ -27,5 +27,5 @@ consumerHourly2.on("message", async function (message) {
 
     const newHourly = new Hourly(hourjson);
     const createdHourly = await newHourly.save();
-  }
+  // }
 });

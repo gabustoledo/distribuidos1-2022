@@ -42,5 +42,5 @@ producerHourly.on("ready", function () {
         });
     }
     console.log('enviados hora')
-  }, 24 * 60 * 60 * 1000); // 1 dia
+  }, 60 * 60 * 1000); // 1 hora
 });
